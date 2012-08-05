@@ -1,0 +1,29 @@
+# str-helpers
+
+Few helper functions for clojure strings.
+
+## Usage
+
+``` clojure
+(require '[str-helpers :as h])
+(require '[clojure.string :as s])
+
+(h/dasherize "hello world")  ; => "hello-world"
+(h/dasherize "hello_world")  ; => "hello-world"
+
+(h/capitalize "hello-world") ; => "Hello world"
+(h/capitalize "hello_world") ; => "Hello world"
+(s/capitalize "hello_world") ; => "Hello_world"
+
+(h/underscore "hello-world") ; => "hello_world"
+(h/underscore "hello world") ; => "hello_world"
+
+(h/humanize "hello-world")   ; => "hello world"
+(h/humanize "hello_world")   ; => "hello world"
+```
+
+## License
+
+Copyright (C) 2012 edtsech
+
+Distributed under the Eclipse Public License, the same as Clojure.
