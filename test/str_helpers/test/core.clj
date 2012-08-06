@@ -3,8 +3,8 @@
   (:use [clojure.test]))
 
 (deftest humanize-test
-         (is (= "hello world" (humanize "hello-world")))
-         (is (= "hello world" (humanize "hello_world"))))
+         (is (= "Hello world" (humanize "hello-world")))
+         (is (= "Hello world" (humanize "hello_world"))))
 
 (deftest underscore-test
          (is (= "hello_world" (underscore "hello world")))

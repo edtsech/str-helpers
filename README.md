@@ -13,8 +13,8 @@ Few helper functions for Clojure strings.
 (h/underscore "hello-world") ; => "hello_world"
 (h/underscore "hello world") ; => "hello_world"
 
-(h/humanize "hello-world")   ; => "hello world"
-(h/humanize "hello_world")   ; => "hello world"
+(h/humanize "hello-world")   ; => "Hello world"
+(h/humanize "hello_world")   ; => "Hello world"
 ```
 
 ## License
