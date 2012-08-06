@@ -6,11 +6,6 @@
     (string/replace #"-" " ")
     (string/replace #"_" " ")))
 
-(defn capitalize [s]
-  (-> s
-    (humanize)
-    (string/capitalize)))
-
 (defn underscore [s]
   (-> s
     (string/replace #"-" "_")

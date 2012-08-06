@@ -6,14 +6,9 @@ Few helper functions for Clojure strings.
 
 ``` clojure
 (require '[str-helpers :as h])
-(require '[clojure.string :as s])
 
 (h/dasherize "hello world")  ; => "hello-world"
 (h/dasherize "hello_world")  ; => "hello-world"
-
-(h/capitalize "hello-world") ; => "Hello world"
-(h/capitalize "hello_world") ; => "Hello world"
-(s/capitalize "hello_world") ; => "Hello_world"
 
 (h/underscore "hello-world") ; => "hello_world"
 (h/underscore "hello world") ; => "hello_world"
