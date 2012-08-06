@@ -8,11 +8,13 @@ Few helper functions for Clojure strings.
 (use 'str-helpers)
 ``` 
 
-dasherize - Capitalizes the first word and turns underscores and dashes into spaces.
+
+dasherize - Turns underscores and whitespaces into dashes.
 ``` clojure
 (h/dasherize "hello world")  ; => "hello-world"
 (h/dasherize "hello_world")  ; => "hello-world"
 ```
+
 
 underscore - Turns dashes and whitespaces into underscores.
 ``` clojure
@@ -20,7 +22,8 @@ underscore - Turns dashes and whitespaces into underscores.
 (h/underscore "hello world") ; => "hello_world"
 ```
 
-humanize - Turns underscores and whitespaces into dashes.
+
+humanize - Capitalizes the first word and turns underscores and dashes into spaces.
 ``` clojure
 (h/humanize "hello-world")   ; => "Hello world"
 (h/humanize "hello_world")   ; => "Hello world"
