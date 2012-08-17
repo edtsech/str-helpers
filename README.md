@@ -1,6 +1,6 @@
 # str-helpers
 
-Few helper functions for Clojure strings.
+Few helper functions for strings in Clojure.
 
 ## Usage
 
